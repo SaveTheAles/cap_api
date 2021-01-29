@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    cap_api:
+        build: ./
+        restart: always
+        container_name: cap_api
+        ports:
+            - 0.0.0.0:5000:5000
