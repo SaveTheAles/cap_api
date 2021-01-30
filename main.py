@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "/api/v3/coins/cyber"
+    return ""
 
 
-@app.route('/api/v3/coins/cyb', methods=['GET'])
+@app.route('/coins/cyb', methods=['GET'])
 def cyb_data():
     market_data = get_cyb_market_data()['market_data']
     return jsonify({
@@ -22,7 +22,7 @@ def cyb_data():
     })
 
 
-@app.route('/api/v3/coins/gol', methods=['GET'])
+@app.route('/coins/gol', methods=['GET'])
 def gol_data():
     market_data = get_gol_market_data()['market_data']
     return jsonify({
