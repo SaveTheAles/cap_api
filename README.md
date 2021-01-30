@@ -9,6 +9,6 @@ docker-compose up -d cap_api
 available get endpoints:
 
 ```bash
-/api/v3/coins/gol
-/api/v3/coins/cyb
+/api/coins/gol
+/api/coins/cyb
 ```
