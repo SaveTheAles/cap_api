@@ -16,7 +16,9 @@ def cyb_data():
     return jsonify({
         "name": "cyber",
         "symbol": "gcyb",
-        "image": "https://cyber.page/blue-circle.a8fa89beb0.png",
+        "image": {
+            "small": "https://cyber.page/blue-circle.a8fa89beb0.png"
+        },
         "market_data": market_data,
         "supply": GCYB_SUPPLY
     })
@@ -28,7 +30,9 @@ def gol_data():
     return jsonify({
         "name": "euler~Foundation",
         "symbol": "ggol",
-        "image": "https://etherscan.io/images/main/empty-token.png",
+        "image": {
+            "small": "https://etherscan.io/images/main/empty-token.png"
+        },
         "market_data": market_data,
         "supply": GGOL_SUPPLY
     })
